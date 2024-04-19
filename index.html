@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Airest</title>
+  <meta content="Airest" property="og:title" />
+  <meta content="AIもどき" property="og:description" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  
+<header>
+  <span id="modeltext" onclick="showDropdown()">Airest 2.5-turbo</span><select></select>
+  <img src="newchat.png" id="new_chat" onclick="newChat()">
+</header>
+  
+<body>
+  <center>
+    <div id="model-dropdown">
+      <div id="airest-2-5-turbo" class="model-div" onclick="changeModel('airest-2.5-turbo')">
+        Airest 2.5-turbo<span id="selectmodel1" class="selectmodel">✓</span>
+        <p class="model-desc">Using markov, More like chatting</p>
+      </div>
+      <div id="airest-2-5" class="model-div" onclick="changeModel('airest-2.5')">
+        Airest 2.5<span id="selectmodel2" class="selectmodel">✓</span>
+        <p class="model-desc">35x more data than airest-2</p>
+      </div>
+      <div id="airest-2" class="model-div" onclick="changeModel('airest-2')">
+        Airest 2<span id="selectmodel3" class="selectmodel">✓</span>
+      </div>
+      <div id="airest-1" class="model-div" onclick="changeModel('airest-1')">
+        Airest 1<span id="selectmodel4" class="selectmodel">✓</span>
+      </div>
+    </div>
+  </center>
+  <div id="msgContainer">
+  </div>
+  <div style="padding-bottom: 64px; color: #212121;">
+    .
+  </div>
+  <div id="container">
+    <img src="hamutan.png" id="center-image">
+    <h2>How can I help you today?</h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <input id="mes_input" placeholder="Message Airest..."></input>
+  <button id="send" onclick="sendMes()">⬆</button>
+</footer>
+  
+</html>
